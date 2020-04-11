@@ -1,16 +1,23 @@
 import itertools
 
-tempList = [[1,2,3,4],[1,2,3,4,5],[1],[1],[2]]
+tempList = [[1,2,3,1],[1,2,3,1]]
 removeType = int(input('please select removing type 1- remove method , 2- list comprehension , 3 -remove way with minimum symbols: '))
 result = []
+
+def type3(lst):
+    print([i for n, i in enumerate(tempList) if i not in tempList[:n]] )
 
 if removeType == 1  :
     for elem in tempList :
         if not elem in result:
             result.append(elem)
     print('Output ` ',result)
+
 if  removeType == 2 :
-    [result.append(item) for item in tempList if item not in result]
-    print('Output ` ',result)
+    result = [ tempList[x] for x in range(len(tempList)) if tempList[x] not in tempList[x+1:] ]
+    print('Output ` ', result)
+
 if removeType == 3 :
-    print(list(set(i if type(i)!=list else tuple(i) for i in tempList)))
+    type3(tempList)
+
+#FIXED

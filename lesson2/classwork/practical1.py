@@ -5,7 +5,7 @@ def practical1(string):
     index = []
     vowels = []
     for i in range(len(chars)):
-        if chars[i] in ['a','e','i','o','u']:
+        if chars[i] in ['a','e','i','o','u','A','E','I','O','U']:
             vowels.append(chars[i])
             index.append(i)
     vowels = vowels[::-1]
@@ -20,4 +20,6 @@ def practical1(string):
     str1 = ""
     return str1.join(final)
 
-print(practical1('aec')) 
+print(practical1('America')) 
+
+#FIXED 

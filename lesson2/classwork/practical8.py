@@ -1,3 +1,4 @@
+#practical 8
 def practical8(arr):
     num = 0
     for x in arr:
@@ -8,3 +9,6 @@ def practical8(arr):
     return num
 if __name__ == "__main__":
     print(practical8([5, 5, 5]))
+
+
+#Done

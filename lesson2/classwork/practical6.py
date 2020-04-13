@@ -1,5 +1,5 @@
 MAX_CHAR = 26
-  
+#practical 6  
 def practical6(tempstr, repstr): 
       
     global MAX_CHAR 
@@ -26,3 +26,5 @@ if __name__ == "__main__":
     str1 = "abaabbccabbed"
     str2 = "bedac"
     print(practical6(str1, str2))
+
+#need to be explaned

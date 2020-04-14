@@ -1,6 +1,6 @@
-import itertools
 
-tempList = [[1,2,3,1],[1,2,3,1]]
+tempList = [[[1,2,3,1],[1,2,3,1]],[1,2,3],[[1,2,3,1],[1,2,3,1]]] #checked ,passed
+
 removeType = int(input('please select removing type 1- remove method , 2- list comprehension , 3 -remove way with minimum symbols: '))
 result = []
 
@@ -20,4 +20,4 @@ if  removeType == 2 :
 if removeType == 3 :
     type3(tempList)
 
-#FIXED
+#FIXED #type 3 working wrong when we have list in list ov elements need to be fixed

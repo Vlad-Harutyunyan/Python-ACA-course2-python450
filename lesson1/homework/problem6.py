@@ -1,14 +1,13 @@
 def problem6(a, b):
-    if b != 0:
-        if a > b:
-            return problem6(b, a % b)
-        elif a < b:
-            return problem6(a, b % a)
-    return a
+    if b > a:
+        return problem6(b, a)
+    if a % b == 0:
+        return b
+    return problem6(b, a % b)  
  
 if __name__ == '__main__':
     #solution without recursion
-    inpRange = [64,32]
+    inpRange = [30,20]
     print(problem6(inpRange[0],inpRange[1]))
 
 #FIXED
